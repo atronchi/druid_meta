@@ -14,7 +14,7 @@ for i in d.get_intervals('algodash_pvr_rank_sketch_test')[:0]:
 class Druid(object):
     def __init__(self,
             # From go/druid-prod
-            coordinator_url='http://bdp_druid-coordinator-prod.dynprod.netflix.net:7103/',
+            coordinator_url='http://bdp_druid-coordinator-prod.dynprod.{host}:7103/',
             endpoint='druid/coordinator/v1/',
             verbose=False,
             ):
